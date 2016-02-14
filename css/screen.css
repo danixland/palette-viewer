@@ -1,0 +1,135 @@
+a,
+a:visited,
+a:active {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+body {
+    background: #afafaf url("../img/bg-noise.png") top left repeat;
+    margin: 0;
+    padding: 0;
+}
+#page {
+    margin: 0;
+    padding: 0;
+}
+header#masthead {
+    background: #414141 url("../img/head-noise.png") top left repeat;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    position: relative;
+}
+#masthead h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#masthead h1 a {
+    color: #eaeaea;
+}
+div#palette {
+    display: block;
+    width: 900px;
+    height: 500px;
+    background-color: #d8d8d8;
+    margin: 20px auto 0;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+div#palette div.palette-color {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+div#palette h2.usage {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0 7px #000;
+    color: #333335;
+}
+div#palette div#dark-grey {
+    background-color: #333335;
+}
+div#palette div#dark-grey h2.usage {
+    color: #333335;
+}
+div#palette div#blue-grey {
+    background-color: #2c3646;
+}
+div#palette div#blue-grey h2.usage {
+    color: #2c3646;
+}
+div#palette div#light-grey {
+    background-color: #7c8491;
+}
+div#palette div#light-grey h2.usage {
+    color: #7c8491;
+}
+div#palette div#almost-white {
+    background-color: #eaeaea;
+}
+div#palette div#almost-white h2.usage {
+    color: #eaeaea;
+}
+div#palette div#crimson-red {
+    background-color: #8d0011;
+}
+div#palette div#crimson-red h2.usage {
+    color: #8d0011;
+}
+div#palette div#matte-yellow {
+    background-color: #e8c001;
+}
+div#palette div#matte-yellow h2.usage {
+    color: #e8c001;
+}
+div#palette div.palette-color input {
+    display: none;
+    max-width: 150px;
+    height: 30px;
+    margin: 95px auto;
+    padding: 0.5em;
+    background-color: #fff;
+    color: #000;
+    font-family: "Roboto Mono";
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    border: none;
+}
+div#palette div.palette-color:hover > input,
+div#palette div.palette-color input:focus {
+    display: block;
+}
+footer#colophon {
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    left: 20%;
+    text-align: center;
+    font-size: 12px;
+    padding: 0.5em;
+}
