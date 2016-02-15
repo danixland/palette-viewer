@@ -33,6 +33,24 @@ header#masthead {
     box-shadow: 0 2px 5px rgba(0,0,0,0.7);
     position: relative;
 }
+#masthead input#preview-palette {
+    background-color: #616161;
+    padding: 1em;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    color: #eaeaea;
+    display: none;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+#masthead input#preview-palette:active {
+    box-shadow: none;
+    background-color: #414141;
+}
+#masthead:hover > input#preview-palette {
+    display: block;
+}
 #masthead h1 {
     margin: 0;
     padding: 0;
@@ -132,4 +150,79 @@ footer#colophon {
     text-align: center;
     font-size: 12px;
     padding: 0.5em;
+}
+
+/* mockup look */
+#mock-page {
+    width: 700px;
+    margin: 1em auto;
+    padding: 0;
+}
+#mock-page #mock-header,
+#mock-page #mock-footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#mock-page #mock-header h1 {
+    margin-left: 1em;
+}
+#mock-page #mock-content {
+    padding: 1em;
+}
+#mock-page #mock-content pre.mock-code {
+    width: auto;
+    padding: 0.6em;
+}
+#mock-page #mock-content p.alert {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.5em 0 0.5em 0.6em;
+}
+#mock-page #mock-footer {
+    padding: 0.3em;
+    width: auto;
+    text-align: center;
+}
+
+/* sassy */
+div#sass {
+    position: static;
+}
+input#print-sass {
+    display: block;
+    background-color: #9c27b0;
+    color: #fff;
+    position: absolute;
+    bottom: 2em;
+    right: 1em;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 -1px 7px rgba(0,0,0,0.7);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+input#print-sass:hover,
+input#print-sass:active {
+    opacity: 0.8;
+}
+input#print-sass:active {
+    box-shadow: none;
+}
+div#sass-output {
+    background-color: #d8d8d8;
+    width: 600px;
+    padding: 1em 2em;
+    margin: 2em auto;
+}
+div#sass-output p {
+    text-align: justify;
+}
+div#sass-output pre {
+    padding: 0.4em;
+    background-color: #a8a8a8;
 }
